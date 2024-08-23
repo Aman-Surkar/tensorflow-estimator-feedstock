@@ -25,6 +25,7 @@ requirements:
     - typing_extensions {{ typing_extensions }}
     - python-flatbuffers {{ flatbuffers }}
     - keras {{ keras }}
+    - pip {{ pip }}
   run:
     - python
     - tensorflow-base {{ tensorflow }}
@@ -36,8 +37,7 @@ test:
   requires:
     - pip {{ pip }}
   imports:
-    - tensorflow
-    - tensorflow_estimator
+    - tensorflow.estimator
 
 about:
   home: https://www.tensorflow.org/guide/estimators
