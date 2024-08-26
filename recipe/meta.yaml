@@ -37,7 +37,7 @@ test:
   requires:
     - pip {{ pip }}
   imports:
-    - tensorflow.estimator
+    - tensorflow_estimator
 
 about:
   home: https://www.tensorflow.org/guide/estimators
